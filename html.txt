@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<title> Listas com JavaScript e PHP</title>
+</head>
+<body>
+    <span id="conteudo"></span>
+    <script>
+        $(document).ready(function ()) {
+            $.post('listar_usuario.php', function(retorna)) {
+                $("conteudo").html(retorna);
+            }
+        }
+    </script>
+</body>
+</html>
